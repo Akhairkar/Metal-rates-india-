@@ -234,7 +234,17 @@ nav.main-nav a:hover, nav.main-nav a.active{ color:var(--text); border-bottom-co
 .metal-card .price{ font-family:var(--ff-mono); font-size:1.7rem; font-weight:700; margin-bottom:2px; }
 .metal-card .price small{ font-size:.8rem; color:var(--text-faint); font-weight:400; }
 .metal-card .change{ font-family:var(--ff-mono); font-size:.82rem; margin-bottom:12px; }
-.metal-card .spark{ height:44px; width:100%; margin-bottom:10px; }
+..metal-card .spark{
+  position: relative;
+  height:44px;
+  width:100%;
+  margin-bottom:10px;
+  overflow: hidden;
+}
+.metal-card .spark canvas{
+  position: absolute;
+  inset: 0;
+}
 .metal-card .row-foot{ display:flex; justify-content:space-between; align-items:center; font-size:.75rem; color:var(--text-faint); }
 .metal-card .row-foot .view{ color:var(--accent); font-weight:600; }
 
